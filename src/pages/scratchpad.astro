@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Section, Container, Block, Link } from '../../devlink/_Builtin/Basic';
+import { Section, Container, Block } from '../../devlink/_Builtin/Basic';
 import { VcHeadercheck_mark as VcHeader } from '../../devlink/VcHeader✓.jsx';
 import { VcFootercheck_mark as VcFooter } from '../../devlink/VcFooter✓.jsx';
 import { VcHerocheck_mark as VcHero } from '../../devlink/VcHero✓.jsx';
@@ -13,8 +13,6 @@ import { VcFiftyRightcheck_mark as VcFiftyRight } from '../../devlink/VcFiftyRig
 import { VcCta } from '../../devlink/VcCta.jsx';
 import { VcHeroHeadingcheck_mark as VcHeroHeading } from '../../devlink/VcHeroHeading✓.jsx';
 import { VcMiniHerocheck_mark as VcMiniHero } from '../../devlink/VcMiniHero✓.jsx';
-import { VcHeaderModalcheck_mark as VcHeaderModal } from '../../devlink/VcHeaderModal✓.jsx';
-import { VcHeaderNoticecheck_mark as VcHeaderNotice } from '../../devlink/VcHeaderNotice✓.jsx';
 import { VcMaintenanceBlock } from '../../devlink/VcMaintenanceBlock.jsx';
 import { VcBottomActionable } from '../../devlink/VcBottomActionable.jsx';
 import { VcFancyFiftyLeft } from '../../devlink/VcFancyFiftyLeft.jsx';
@@ -31,449 +29,333 @@ import { CustomCode } from '../../devlink/CustomCode.jsx';
 ---
 
 <Layout>
-  <VcHeader client:load />
-  
-  <!-- Hero Section -->
-  <VcHero
-    client:load
-    heroHeading="Component Scratchpad"
-    heroSubheading="All available components from your Webflow site"
-    heroBackgroundImage="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-  />
-  
-  <!-- Navigation -->
-  <Section className="margin-bottom-24px nav-section">
-    <Container>
-      <div class="nav-links">
-        <a href="#core-components" class="nav-link">Core Components</a>
-        <a href="#layout-components" class="nav-link">Layout Components</a>
-        <a href="#content-components" class="nav-link">Content Components</a>
-        <a href="#special-components" class="nav-link">Special Components</a>
-        <a href="#builtin-components" class="nav-link">Built-in Components</a>
-      </div>
-    </Container>
-  </Section>
+  <div class="scratchpad-container">
+    
+    <!-- Page Title -->
+    <Section className="title-section">
+      <Container>
+        <h1 class="page-title">Component Scratchpad</h1>
+        <p class="page-subtitle">All Vancouver Club components stacked vertically</p>
+        <a href="/email-sigs" class="back-link">← Back to Home</a>
+      </Container>
+    </Section>
 
-  <!-- Core Components -->
-  <Section id="core-components" className="margin-bottom-24px">
-    <Container>
-      <VcHeading
-        client:load
-        headingText="Core Components"
-        headingTag="h2"
-        className="margin-bottom-24px"
-      />
-      
-      <div class="component-grid">
-        <div class="component-card">
-          <h3>VcHeader</h3>
-          <div class="component-preview">
-            <VcHeader client:load />
-          </div>
+    <!-- VcHeader -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcHeader✓</h2>
+          <VcHeader client:load />
         </div>
-        
-        <div class="component-card">
-          <h3>VcFooter</h3>
-          <div class="component-preview">
-            <VcFooter client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcHero</h3>
-          <div class="component-preview">
-            <VcHero
-              client:load
-              heroHeading="Sample Hero"
-              heroSubheading="This is a sample hero component"
-            />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcSubHero</h3>
-          <div class="component-preview">
-            <VcSubHero client:load />
-          </div>
-        </div>
-      </div>
-    </Container>
-  </Section>
+      </Container>
+    </Section>
 
-  <!-- Layout Components -->
-  <Section id="layout-components" className="margin-bottom-24px layout-section">
-    <Container>
-      <VcHeading
-        client:load
-        headingText="Layout Components"
-        headingTag="h2"
-        className="margin-bottom-24px"
-      />
-      
-      <div class="component-grid">
-        <div class="component-card">
-          <h3>VcFiftyLeft</h3>
-          <div class="component-preview">
-            <VcFiftyLeft
-              client:load
-              fiftyLeftHeading="Left Content"
-              fiftyLeftParagraph="This is the left side content in a 50/50 layout."
-            />
-          </div>
+    <!-- VcHero -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcHero✓</h2>
+          <VcHero
+            client:load
+            heroHeading="Sample Hero Component"
+            heroSubheading="This demonstrates the hero section component"
+          />
         </div>
-        
-        <div class="component-card">
-          <h3>VcFiftyRight</h3>
-          <div class="component-preview">
-            <VcFiftyRight
-              client:load
-              fiftyRightHeading="Right Content"
-              fiftyRightParagraph="This is the right side content in a 50/50 layout."
-            />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcFancyFiftyLeft</h3>
-          <div class="component-preview">
-            <VcFancyFiftyLeft client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcFancyFiftyRight</h3>
-          <div class="component-preview">
-            <VcFancyFiftyRight client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcFifty</h3>
-          <div class="component-preview">
-            <VcFifty client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>SideBySide</h3>
-          <div class="component-preview">
-            <SideBySide client:load />
-          </div>
-        </div>
-      </div>
-    </Container>
-  </Section>
+      </Container>
+    </Section>
 
-  <!-- Content Components -->
-  <Section id="content-components" className="margin-bottom-24px">
-    <Container>
-      <VcHeading
-        client:load
-        headingText="Content Components"
-        headingTag="h2"
-        className="margin-bottom-24px"
-      />
-      
-      <div class="component-grid">
-        <div class="component-card">
-          <h3>VcHeading</h3>
-          <div class="component-preview">
-            <VcHeading
-              client:load
-              headingText="Sample Heading"
-              headingTag="h3"
-            />
-          </div>
+    <!-- VcSubHero -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcSubHero</h2>
+          <VcSubHero client:load />
         </div>
-        
-        <div class="component-card">
-          <h3>VcParagraph</h3>
-          <div class="component-preview">
-            <VcParagraph
-              client:load
-              paragraphText="This is a sample paragraph component with some text to demonstrate the styling and layout."
-            />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcButton</h3>
-          <div class="component-preview">
-            <VcButton
-              client:load
-              buttonText="Sample Button"
-              buttonLink="#"
-            />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcCta</h3>
-          <div class="component-preview">
-            <VcCta client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcHeroHeading</h3>
-          <div class="component-preview">
-            <VcHeroHeading
-              client:load
-              heroHeadingText="Hero Heading"
-              heroSubheadingText="This is a hero heading component"
-            />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcMiniHero</h3>
-          <div class="component-preview">
-            <VcMiniHero client:load />
-          </div>
-        </div>
-      </div>
-    </Container>
-  </Section>
+      </Container>
+    </Section>
 
-  <!-- Special Components -->
-  <Section id="special-components" className="margin-bottom-24px special-section">
-    <Container>
-      <VcHeading
-        client:load
-        headingText="Special Components"
-        headingTag="h2"
-        className="margin-bottom-24px"
-      />
-      
-      <div class="component-grid">
-        <div class="component-card">
-          <h3>VcHeaderModal</h3>
-          <div class="component-preview">
-            <VcHeaderModal client:load />
-          </div>
+    <!-- VcHeroHeading -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcHeroHeading✓</h2>
+          <VcHeroHeading
+            client:load
+            heroHeadingText="Sample Hero Heading"
+            heroSubheadingText="This is a hero heading component"
+          />
         </div>
-        
-        <div class="component-card">
-          <h3>VcHeaderNotice</h3>
-          <div class="component-preview">
-            <VcHeaderNotice client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcMaintenanceBlock</h3>
-          <div class="component-preview">
-            <VcMaintenanceBlock client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcBottomActionable</h3>
-          <div class="component-preview">
-            <VcBottomActionable client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcPreloader</h3>
-          <div class="component-preview">
-            <VcPreloader client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>DraftInfoBlock</h3>
-          <div class="component-preview">
-            <DraftInfoBlock client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>AdamBlockUncoded</h3>
-          <div class="component-preview">
-            <AdamBlockUncoded client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>Rr</h3>
-          <div class="component-preview">
-            <Rr client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>Kk</h3>
-          <div class="component-preview">
-            <Kk client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>VcGal</h3>
-          <div class="component-preview">
-            <VcGal client:load />
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>CustomCode</h3>
-          <div class="component-preview">
-            <CustomCode client:load />
-          </div>
-        </div>
-      </div>
-    </Container>
-  </Section>
+      </Container>
+    </Section>
 
-  <!-- Built-in Components -->
-  <Section id="builtin-components" className="margin-bottom-24px">
-    <Container>
-      <VcHeading
-        client:load
-        headingText="Built-in Components"
-        headingTag="h2"
-        className="margin-bottom-24px"
-      />
-      
-      <div class="component-grid">
-        <div class="component-card">
-          <h3>Basic Components</h3>
-          <div class="component-preview">
-            <p>Section, Container, Block, Link, etc.</p>
-            <p>These are the foundation components used throughout the app.</p>
-          </div>
+    <!-- VcMiniHero -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcMiniHero✓</h2>
+          <VcMiniHero client:load />
         </div>
-        
-        <div class="component-card">
-          <h3>Typography</h3>
-          <div class="component-preview">
-            <p>Text formatting and styling components.</p>
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>Form Components</h3>
-          <div class="component-preview">
-            <p>Form elements and validation components.</p>
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>Navigation</h3>
-          <div class="component-preview">
-            <p>Navbar, Dropdown, and navigation components.</p>
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>Media Components</h3>
-          <div class="component-preview">
-            <p>Video, YouTubeVideo, BackgroundVideo components.</p>
-          </div>
-        </div>
-        
-        <div class="component-card">
-          <h3>Interactive Components</h3>
-          <div class="component-preview">
-            <p>Slider, Tabs, Map, and other interactive elements.</p>
-          </div>
-        </div>
-      </div>
-    </Container>
-  </Section>
+      </Container>
+    </Section>
 
-  <!-- Back to Home -->
-  <Section className="back-section">
-    <Container>
-      <a href="/email-sigs" class="btn btn-primary">
-        ← Back to Home
-      </a>
-    </Container>
-  </Section>
+    <!-- VcHeading -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcHeading✓</h2>
+          <VcHeading
+            client:load
+            headingText="Sample Vancouver Club Heading"
+            headingTag="h3"
+          />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcParagraph -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcParagraph✓</h2>
+          <VcParagraph
+            client:load
+            paragraphText="This is a sample paragraph component demonstrating the Vancouver Club's text styling and layout approach."
+          />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcButton -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcButton✓</h2>
+          <VcButton
+            client:load
+            buttonText="Sample Button"
+            buttonLink="#"
+          />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcCta -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcCta</h2>
+          <VcCta client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcFiftyLeft -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcFiftyLeft✓</h2>
+          <VcFiftyLeft
+            client:load
+            fiftyLeftHeading="Left Content Section"
+            fiftyLeftParagraph="This demonstrates the left-side content in a 50/50 layout component."
+          />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcFiftyRight -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcFiftyRight✓</h2>
+          <VcFiftyRight
+            client:load
+            fiftyRightHeading="Right Content Section"
+            fiftyRightParagraph="This demonstrates the right-side content in a 50/50 layout component."
+          />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcFancyFiftyLeft -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcFancyFiftyLeft</h2>
+          <VcFancyFiftyLeft client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcFancyFiftyRight -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcFancyFiftyRight</h2>
+          <VcFancyFiftyRight client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcFifty -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcFifty</h2>
+          <VcFifty client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- SideBySide -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">SideBySide</h2>
+          <SideBySide client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcMaintenanceBlock -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcMaintenanceBlock</h2>
+          <VcMaintenanceBlock client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcBottomActionable -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcBottomActionable</h2>
+          <VcBottomActionable client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- DraftInfoBlock -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">DraftInfoBlock</h2>
+          <DraftInfoBlock client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- AdamBlockUncoded -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">AdamBlockUncoded</h2>
+          <AdamBlockUncoded client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- Rr -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">Rr</h2>
+          <Rr client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- Kk -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">Kk</h2>
+          <Kk client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcGal -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcGal</h2>
+          <VcGal client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcPreloader -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcPreloader</h2>
+          <VcPreloader client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- CustomCode -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">CustomCode</h2>
+          <CustomCode client:load />
+        </div>
+      </Container>
+    </Section>
+
+    <!-- VcFooter -->
+    <Section className="component-section">
+      <Container>
+        <div class="component-wrapper">
+          <h2 class="component-title">VcFooter✓</h2>
+          <VcFooter client:load />
+        </div>
+      </Container>
+    </Section>
+
+  </div>
 </Layout>
 
 <style>
-  /* Dark Theme Styles */
+  /* Dark Theme Base */
   :global(body) {
     background: #1a1a1a;
     color: #ffffff;
   }
   
-  .nav-section {
-    background: #2d2d2d;
-    padding: 2rem 0;
+  .scratchpad-container {
+    min-height: 100vh;
+    background: #1a1a1a;
   }
   
-  .layout-section {
+  .title-section {
     background: #2d2d2d;
-  }
-  
-  .special-section {
-    background: #2d2d2d;
-  }
-  
-  .back-section {
     padding: 3rem 0;
     text-align: center;
-    background: #2d2d2d;
+    border-bottom: 1px solid #444;
   }
   
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .nav-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #404040;
+  .page-title {
+    font-size: 3rem;
+    font-weight: 700;
     color: #ffffff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    background: #555555;
-  }
-  
-  .component-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .component-card {
-    background: #333333;
-    border: 1px solid #555555;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  }
-  
-  .component-card h3 {
     margin-bottom: 1rem;
-    color: #ffffff;
+  }
+  
+  .page-subtitle {
     font-size: 1.25rem;
-    font-weight: 600;
+    color: #cccccc;
+    margin-bottom: 2rem;
   }
   
-  .component-preview {
-    min-height: 100px;
-    border: 1px dashed #777777;
-    border-radius: 4px;
-    padding: 1rem;
-    background: #404040;
-  }
-  
-  .btn {
+  .back-link {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -481,11 +363,39 @@ import { CustomCode } from '../../devlink/CustomCode.jsx';
     transition: background 0.3s ease;
   }
   
-  .btn-primary {
-    background: #007bff;
+  .back-link:hover {
+    background: #0056b3;
   }
   
-  .btn-primary:hover {
-    background: #0056b3;
+  .component-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  .component-section:nth-child(even) {
+    background: #222222;
+  }
+  
+  .component-section:nth-child(odd) {
+    background: #1a1a1a;
+  }
+  
+  .component-wrapper {
+    width: 100%;
+  }
+  
+  .component-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00d4ff;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+  }
+  
+  /* Ensure components display properly */
+  .component-wrapper > :global(*:last-child) {
+    margin-bottom: 0;
   }
 </style> 
