@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- Static Food & Beverage Page -->
+  <div class="food-beverage-page">
+    <!-- Hero Section -->
+    <section class="hero-section" style="
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                  url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    ">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 600;">Food & Beverage</h1>
+        <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">
+          Experience exceptional dining at The Vancouver Club
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-nav" style="
+      background: #f8f9fa;
+      padding: 3rem 0;
+      text-align: center;
+    ">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem; color: #333;">Our Menus</h2>
+        <div class="menu-buttons" style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 1.5rem;
+          max-width: 800px;
+          margin: 0 auto;
+        ">
+          <a href="#" class="menu-btn" style="
+            display: block;
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.borderColor='#007bff'; this.style.transform='translateY(-2px)'" 
+             onmouseout="this.style.borderColor='#ddd'; this.style.transform='translateY(0)'">
+            BREAKFAST MENU
+          </a>
+          <a href="#" class="menu-btn" style="
+            display: block;
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.borderColor='#007bff'; this.style.transform='translateY(-2px)'" 
+             onmouseout="this.style.borderColor='#ddd'; this.style.transform='translateY(0)'">
+            LUNCH MENU
+          </a>
+          <a href="#" class="menu-btn" style="
+            display: block;
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.borderColor='#007bff'; this.style.transform='translateY(-2px)'" 
+             onmouseout="this.style.borderColor='#ddd'; this.style.transform='translateY(0)'">
+            DINNER MENU
+          </a>
+          <a href="#" class="menu-btn" style="
+            display: block;
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.borderColor='#007bff'; this.style.transform='translateY(-2px)'" 
+             onmouseout="this.style.borderColor='#ddd'; this.style.transform='translateY(0)'">
+            POURS & PLATES MENU
+          </a>
+          <a href="#" class="menu-btn" style="
+            display: block;
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.borderColor='#007bff'; this.style.transform='translateY(-2px)'" 
+             onmouseout="this.style.borderColor='#ddd'; this.style.transform='translateY(0)'">
+            KIDS MENU
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dining Experience Section -->
+    <section class="dining-experience" style="
+      padding: 4rem 0;
+      background: white;
+    ">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+          <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: #333;">Dining Experience</h2>
+          <p style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 0 auto;">
+            From casual lunches to elegant dinners, our culinary team creates memorable dining experiences 
+            with locally-sourced ingredients and innovative presentations.
+          </p>
+        </div>
+        
+        <div style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+          margin-top: 3rem;
+        ">
+          <div class="feature-card" style="
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+          ">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🍽️</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #333;">Fine Dining</h3>
+            <p style="color: #666;">Elegant atmosphere with exceptional service and world-class cuisine.</p>
+          </div>
+          
+          <div class="feature-card" style="
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+          ">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🥂</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #333;">Wine & Spirits</h3>
+            <p style="color: #666;">Extensive wine list and craft cocktails to complement your meal.</p>
+          </div>
+          
+          <div class="feature-card" style="
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+          ">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🌱</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #333;">Local Ingredients</h3>
+            <p style="color: #666;">Fresh, seasonal ingredients sourced from local producers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Home Button -->
+    <section style="
+      padding: 3rem 0;
+      text-align: center;
+      background: #f8f9fa;
+    ">
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <a href="/email-sigs" style="
+          display: inline-block;
+          padding: 1rem 2rem;
+          background: #007bff;
+          color: white;
+          text-decoration: none;
+          border-radius: 6px;
+          font-weight: 600;
+          transition: background 0.3s ease;
+        " onmouseover="this.style.background='#0056b3'" 
+           onmouseout="this.style.background='#007bff'">
+          ← Back to Home
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout> 

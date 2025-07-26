@@ -11,51 +11,30 @@ import { VcFootercheck_mark as VcFooter } from '../../devlink/VcFooter✓.jsx';
   <Section
     client:load
     tag="section"
-    className="margin-bottom-24px"
-    style={{
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }}
+    className="margin-bottom-24px hero-section"
   >
     <Container>
       <Block
         tag="div"
         className="hero-split"
-        style={{
-          textAlign: 'center',
-          maxWidth: '600px',
-          margin: '0 auto'
-        }}
       >
-        <h1 class="margin-bottom-24px">Welcome to Webflow Cloud</h1>
-        <p class="margin-bottom-24px">This is a simple test using Basic components with enhanced styling.</p>
-        <div style={{
-          marginTop: '12px',
-          display: 'flex',
-          gap: '16px',
-          justifyContent: 'center',
-          flexWrap: 'wrap'
-        }}>
-          <Link
-            button={true}
-            options={{
-              href: "https://developers.webflow.com/webflow-cloud/getting-started"
-            }}
-            className="button-primary"
-          >
+        <h1 class="hero-title">
+          Welcome to Webflow Cloud
+        </h1>
+        <p class="hero-description">
+          This is your Vancouver Club Webflow Cloud application. 
+          Experience the power of combining Webflow's visual editor with custom development.
+        </p>
+        <div class="button-container">
+          <a href="/email-sigs/get-started" class="btn btn-primary">
             Get Started
-          </Link>
-          <Link
-            button={true}
-            options={{
-              href: "/food-beverage"
-            }}
-            className="button-secondary"
-          >
-            Food & Beverage
-          </Link>
+          </a>
+          <a href="/email-sigs/food-beverage-static" class="btn btn-secondary">
+            Food & Beverage (Static)
+          </a>
+          <a href="/email-sigs/scratchpad" class="btn btn-tertiary">
+            Component Scratchpad
+          </a>
         </div>
       </Block>
     </Container>
@@ -65,36 +44,71 @@ import { VcFootercheck_mark as VcFooter } from '../../devlink/VcFooter✓.jsx';
 </Layout>
 
 <style>
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
-  .button-primary {
-    border-radius: 4px;
-    background: #146ef5;
-    color: #ffffff;
-    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.25), inset 0px 29px 23px -16px rgba(255, 255, 255, 0.04), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.2);
+  
+  .hero-split {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
-
-  .button-primary:hover {
-    background: #2c80fd;
-    color: #ffffff;
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #333;
   }
-
-  .button-secondary {
-    border-radius: 4px;
-    background: #183431;
-    color: #ffffff;
-    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.25), inset 0px 29px 23px -16px rgba(255, 255, 255, 0.04), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.2);
+  
+  .hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #666;
+    line-height: 1.6;
   }
-
-  .button-secondary:hover {
-    background: #2a4f4a;
-    color: #ffffff;
+  
+  .button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+  
+  .btn-secondary {
+    background: #28a745;
+  }
+  
+  .btn-secondary:hover {
+    background: #1e7e34;
+  }
+  
+  .btn-tertiary {
+    background: #6f42c1;
+  }
+  
+  .btn-tertiary:hover {
+    background: #5a32a3;
   }
 </style>
