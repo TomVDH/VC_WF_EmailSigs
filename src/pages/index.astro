@@ -31,7 +31,13 @@ import { VcFootercheck_mark as VcFooter } from '../../devlink/VcFooter✓.jsx';
       >
         <h1 class="margin-bottom-24px">Welcome to Webflow Cloud</h1>
         <p class="margin-bottom-24px">This is a simple test using Basic components with enhanced styling.</p>
-        <div style={{marginTop: '12px'}}>
+        <div style={{
+          marginTop: '12px',
+          display: 'flex',
+          gap: '16px',
+          justifyContent: 'center',
+          flexWrap: 'wrap'
+        }}>
           <Link
             button={true}
             options={{
@@ -40,6 +46,15 @@ import { VcFootercheck_mark as VcFooter } from '../../devlink/VcFooter✓.jsx';
             className="button-primary"
           >
             Get Started
+          </Link>
+          <Link
+            button={true}
+            options={{
+              href: "/food-beverage"
+            }}
+            className="button-secondary"
+          >
+            Food & Beverage
           </Link>
         </div>
       </Block>
@@ -68,6 +83,18 @@ import { VcFootercheck_mark as VcFooter } from '../../devlink/VcFooter✓.jsx';
 
   .button-primary:hover {
     background: #2c80fd;
+    color: #ffffff;
+  }
+
+  .button-secondary {
+    border-radius: 4px;
+    background: #183431;
+    color: #ffffff;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.25), inset 0px 29px 23px -16px rgba(255, 255, 255, 0.04), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.2);
+  }
+
+  .button-secondary:hover {
+    background: #2a4f4a;
     color: #ffffff;
   }
 </style>

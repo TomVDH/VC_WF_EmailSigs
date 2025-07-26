@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Section, Container, Block, Link } from '../../devlink/_Builtin/Basic';
+import { VcHeadercheck_mark as VcHeader } from '../../devlink/VcHeader✓.jsx';
+import { VcFootercheck_mark as VcFooter } from '../../devlink/VcFooter✓.jsx';
+import { VcHerocheck_mark as VcHero } from '../../devlink/VcHero✓.jsx';
+import { VcSubHero } from '../../devlink/VcSubHero.jsx';
+---
+
+<Layout>
+  <VcHeader client:load />
+  
+  <!-- Hero Section -->
+  <VcHero
+    client:load
+    heroHeading="Food & Beverage"
+    heroSubheading="Experience exceptional dining at The Vancouver Club"
+    heroBackgroundImage="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+  />
+  
+  <!-- Food & Beverage Menu Section - Pulled from Webflow Site -->
+  <VcSubHero client:load />
+  
+  <!-- Additional Content Section -->
+  <Section
+    client:load
+    tag="section"
+    className="margin-bottom-24px"
+    style={{
+      padding: '80px 0',
+      backgroundColor: '#faf8f3'
+    }}
+  >
+    <Container>
+      <Block
+        tag="div"
+        style={{
+          textAlign: 'center',
+          maxWidth: '800px',
+          margin: '0 auto'
+        }}
+      >
+        <h2 style={{
+          marginBottom: '24px',
+          color: '#183431',
+          fontFamily: 'VC Didot HTF',
+          fontSize: '2.5rem'
+        }}>
+          Culinary Excellence
+        </h2>
+        
+        <p style={{
+          marginBottom: '40px',
+          fontSize: '1.1rem',
+          lineHeight: '1.6',
+          color: '#333',
+          fontFamily: 'VC Gotham SSM'
+        }}>
+          Our award-winning culinary team creates exceptional dining experiences using the finest local ingredients. From intimate private dining to grand celebrations, every meal is crafted with precision and passion.
+        </p>
+        
+        <div style={{
+          marginTop: '60px',
+          textAlign: 'center'
+        }}>
+          <Link
+            button={true}
+            options={{
+              href: "/"
+            }}
+            className="button-primary"
+            style={{
+              marginRight: '16px'
+            }}
+          >
+            ← Back to Home
+          </Link>
+        </div>
+      </Block>
+    </Container>
+  </Section>
+  
+  <VcFooter client:load />
+</Layout>
+
+<style>
+  .button-primary {
+    border-radius: 4px;
+    background: #146ef5;
+    color: #ffffff;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.25), inset 0px 29px 23px -16px rgba(255, 255, 255, 0.04), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.2);
+  }
+
+  .button-primary:hover {
+    background: #2c80fd;
+    color: #ffffff;
+  }
+</style> 
