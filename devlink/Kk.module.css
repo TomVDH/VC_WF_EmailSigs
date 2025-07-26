@@ -1,0 +1,5 @@
+.section-2 {
+  position: fixed;
+  z-index: 40;
+  mix-blend-mode: difference;
+}

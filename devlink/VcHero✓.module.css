@@ -1,0 +1,708 @@
+.oz-hero {
+  position: relative;
+
+  height: 100svh;
+  clear: none;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(45, 23.29%, 24.11%, 1.00)), linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.34),hsla(0, 0.00%, 0.00%, 0.34));
+}
+
+.oz-hero:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(134, 36.84%, 14.90%, 0.39)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6679d9935d79523db48eb02e_Summer%20Rooftop%20-%20Group%20Image.avif");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+}
+
+.oz-hero:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, var(--_vc---colours--transparent)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679b2511f7e3a67c1f52a9_VC_OTS_LowRes-43.avif");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.oz-hero:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, var(--_vc---colours--white)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6753729c0c8ec1c533ff6c5b_VCC%202024%20Sept%2021.avif");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-attachment: scroll, scroll;
+}
+
+.oz-hero:where(.w-variant-c4ecabb4-33a6-b853-762e-bd0898fed784) {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(51, 21.95%, 12.03%, 1.00)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679988dc60fb15dbc5c3bf_Big-Easy-Brunch-Sax.avif");
+  background-position: 0px 0px, 0% 0%;
+  background-size: auto, cover;
+  filter: hue-rotate(0deg) saturate(93%);
+}
+
+.oz-hero:where(.w-variant-e40792b1-9b2e-f67f-3b9d-1014f0c4604d) {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(213, 100.00%, 77.33%, 0.49)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/687ed23a3bf440f25cbc5597_Airplane%20Golden%20Hour.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+
+.oz-hero:where(.w-variant-38ad5934-64e5-dca6-50a9-6c06f0fcd8e0) {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(42.857142857142925, 34.35%, 62.09%, 0.78)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679a530f43730a309f400f_Prayer-Hands-Edit.avif");
+  background-size: auto, cover;
+}
+
+.oz-hero:where(.w-variant-66349f16-6d27-d750-0fb1-7c9a26593486) {
+  background-image: linear-gradient(to bottom, transparent,transparent), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6557bb5d53809623bd8abfcc_Copy-of-Bedroom-0269.avif");
+  background-position: 0px 0px, 100% 100%;
+  background-size: auto, cover;
+}
+
+.oz-hero:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(45, 23.29%, 24.11%, 1.00)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6793d4a863d185fe4eebbf4d_EW3A1560%20(1).jpg");
+  background-position: 0px 0px, 100% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero {
+    height: 100vh;
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, var(--_vc---colours--transparent)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679b2511f7e3a67c1f52a9_VC_OTS_LowRes-43.avif");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero:where(.w-variant-e40792b1-9b2e-f67f-3b9d-1014f0c4604d) {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(213, 100.00%, 77.33%, 0.49)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/687ed23a3bf440f25cbc5597_Airplane%20Golden%20Hour.jpg");
+    background-position: 0px 0px, 50% 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6679d9935d79523db48eb02e_Summer%20Rooftop%20-%20Group%20Image.avif");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(45, 23.29%, 24.11%, 1.00)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6793d4a863d185fe4eebbf4d_EW3A1560%20(1).jpg");
+    background-position: 0px 0px, 79% 50%;
+    background-size: auto, cover;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(120, 13.21%, 68.82%, 0.72)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6753729c0c8ec1c533ff6c5b_VCC%202024%20Sept%2021.avif");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero:where(.w-variant-c4ecabb4-33a6-b853-762e-bd0898fed784) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679988dc60fb15dbc5c3bf_Big-Easy-Brunch-Sax.avif");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .oz-hero:where(.w-variant-66349f16-6d27-d750-0fb1-7c9a26593486) {
+    background-image: linear-gradient(to bottom, transparent,transparent), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6557bb5d53809623bd8abfcc_Copy-of-Bedroom-0269.avif");
+    background-position: 0px 0px, 50% 100%;
+    background-size: auto, cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero {
+    height: auto;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+    display: flex;
+    align-items: stretch;
+    background-image: linear-gradient(to bottom, var(--_vc---colours--black),var(--_vc---colours--black));
+    background-position: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, var(--_vc---colours--transparent)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679a852928a8af0b127dc8_Take-Out-Grill-Feature.avif");
+    background-position: 0px 0px, 50% 50%;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, scroll;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero:where(.w-variant-e40792b1-9b2e-f67f-3b9d-1014f0c4604d) {
+    background-position: 0px 0px, 50% 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(45, 23.29%, 24.11%, 1.00)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6793d4a863d185fe4eebbf4d_EW3A1560%20(1).jpg");
+    background-position: 0px 0px, 70% 50%;
+    background-size: auto, cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero:where(.w-variant-c4ecabb4-33a6-b853-762e-bd0898fed784) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679988dc60fb15dbc5c3bf_Big-Easy-Brunch-Sax.avif");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+    background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(120, 13.21%, 68.82%, 0.72)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6753729c0c8ec1c533ff6c5b_VCC%202024%20Sept%2021.avif");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-attachment: scroll, scroll;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .oz-hero:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    background-image: radial-gradient(circle farthest-corner at 100% 0%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(45, 23.29%, 24.11%, 1.00)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6793d4a863d185fe4eebbf4d_EW3A1560%20(1).jpg");
+    background-position: 0px 0px, 70% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+  }
+}
+
+.oz-hero.health-wellness-8 {
+  background-image: radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, var(--_vc---colours--deep-green)), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6679d9935d79523db48eb02e_Summer%20Rooftop%20-%20Group%20Image.avif");
+}
+
+@media screen and (max-width: 767px) {
+  .oz-hero.health-wellness-8 {
+    display: flex;
+  }
+}
+
+.oz-hero.is--blog-nashville {
+  background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/678197aef4cc5a68ec757750_Nashville%20Picture.avif"), radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(45, 23.29%, 24.11%, 1.00)), linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.34),hsla(0, 0.00%, 0.00%, 0.34));
+  background-position: 0px 0px, 0px 0px, 0px 0px;
+  background-size: cover, auto, auto;
+}
+
+.oz-hero.is--blog-antarctica {
+  background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/679407874f9b4c2ee2b5b97a_882A3233.avif"), radial-gradient(circle farthest-corner at 0% 100%, hsla(0, 0.00%, 100.00%, 0.00) 59%, hsla(45, 23.29%, 24.11%, 1.00)), linear-gradient(to bottom, hsla(0, 0.00%, 0.00%, 0.34),hsla(0, 0.00%, 0.00%, 0.34));
+  background-position: 0px 0px, 0px 0px, 0px 0px;
+  background-size: cover, auto, auto;
+}
+
+@media screen and (max-width: 991px) {
+  .sticky-mobile-background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background {
+    display: block;
+    min-height: 450px;
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6557bb5d53809623bd8abfcc_Copy-of-Bedroom-0269.avif");
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6793d4a863d185fe4eebbf4d_EW3A1560%20(1).jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+    background-image: radial-gradient(circle farthest-corner at 100% 0%, var(--_vc---colours--black), var(--_vc---colours--transparent) 26%), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/67254174b5a1328086e1bb4c_members_on_sunroof.avif");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679b2511f7e3a67c1f52a9_VC_OTS_LowRes-43.avif");
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6753729c0c8ec1c533ff6c5b_VCC%202024%20Sept%2021.avif");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background:where(.w-variant-c4ecabb4-33a6-b853-762e-bd0898fed784) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679988dc60fb15dbc5c3bf_Big-Easy-Brunch-Sax.avif");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background:where(.w-variant-e40792b1-9b2e-f67f-3b9d-1014f0c4604d) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/687ed23a3bf440f25cbc5597_Airplane%20Golden%20Hour.jpg");
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background:where(.w-variant-38ad5934-64e5-dca6-50a9-6c06f0fcd8e0) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679a530f43730a309f400f_Prayer-Hands-Edit.avif");
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-mobile-background {
+    min-height: 375px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-mobile-background:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    min-height: 450px;
+    background-image: radial-gradient(circle farthest-corner at 100% 0%, hsla(38, 25.00%, 16.53%, 1.00), var(--_vc---colours--transparent) 37%), url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/6793d4a863d185fe4eebbf4d_EW3A1560%20(1).jpg");
+    background-position: 0px 0px, 85% 50%;
+    background-size: auto, cover;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-mobile-background:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+    min-height: 375px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-mobile-background:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-mobile-background:where(.w-variant-38ad5934-64e5-dca6-50a9-6c06f0fcd8e0) {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/65679a530f43730a309f400f_Prayer-Hands-Edit.avif");
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-mobile-background.is--travel-blog.is--blog-nashville {
+    background-image: url("https://cdn.prod.website-files.com/6557bb5d53809623bd8abf36/678197aef4cc5a68ec757750_Nashville%20Picture.avif");
+  }
+}
+
+.sticky-container {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1em;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+
+  background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black) 91%);
+}
+
+.sticky-container:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+  background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), hsla(0, 0.00%, 5.10%, 0.45));
+}
+
+.sticky-container:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-image: none;
+}
+
+@media screen and (max-width: 991px) {
+  .sticky-container {
+    background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    position: static;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-image: linear-gradient(to bottom, var(--_vc---colours--black),var(--_vc---colours--black)), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+
+    min-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container {
+    padding-top: 1em;
+  }
+}
+
+.sticky-container.is--footer {
+  position: static;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+
+  display: flex;
+  padding-bottom: 0.5em;
+  align-items: center;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+
+  background-image: none;
+}
+
+@media screen and (max-width: 991px) {
+  .sticky-container.is--footer {
+    padding-right: var(--_vc---paddings--padding-m);
+    padding-left: var(--_vc---paddings--padding-m);
+  }
+}
+
+.sticky-center-wrapper:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-center-wrapper:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+}
+
+.logo {
+  width: 50svw;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 75svw;
+  }
+}
+
+.icon {
+  display: block;
+  width: 1.75svw;
+  color: hsla(0, 0.00%, 100.00%, 1.00);
+}
+
+.icon:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+  display: none;
+}
+
+.sticky-container-left {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: auto;
+  bottom: 0%;
+
+  display: flex;
+  width: 100%;
+  min-height: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: var(--_vc---paddings--verti-pad-l) var(--_vc---paddings--padding-l);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+
+  background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black) 80%);
+}
+
+.sticky-container-left:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+  display: flex;
+  padding-bottom: var(--_vc---paddings--verti-pad-l);
+  background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), hsla(0, 0.00%, 5.10%, 0.50) 95%);
+}
+
+.sticky-container-left:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+  display: flex;
+  padding-bottom: 1em;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black) 97%);
+}
+
+.sticky-container-left:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+  display: flex;
+}
+
+.sticky-container-left:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+  background-image: none;
+}
+
+@media screen and (max-width: 991px) {
+  .sticky-container-left {
+    justify-content: flex-end;
+    align-items: stretch;
+    background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sticky-container-left:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+    padding-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left {
+    position: static;
+
+    margin-top: -80px;
+    padding-bottom: var(--_vc---paddings--verti-pad-l);
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--black) 30%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+
+    min-height: fit-content;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--black) 20%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+    padding-bottom: 2em;
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--deep-green) 24%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black) 97%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--black) 27%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), hsla(0, 0.00%, 5.10%, 0.50) 95%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left:where(.w-variant-c4ecabb4-33a6-b853-762e-bd0898fed784) {
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--black) 27%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left:where(.w-variant-e40792b1-9b2e-f67f-3b9d-1014f0c4604d) {
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--black) 21%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left:where(.w-variant-38ad5934-64e5-dca6-50a9-6c06f0fcd8e0) {
+    padding-bottom: var(--_vc---paddings--verti-pad-m);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left:where(.w-variant-66349f16-6d27-d750-0fb1-7c9a26593486) {
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--black) 25%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container-left {
+    padding-right: var(--_vc---paddings--padding-m);
+    padding-left: var(--_vc---paddings--padding-m);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container-left:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container-left:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container-left:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    padding-right: var(--_vc---paddings--padding-m);
+    padding-left: var(--_vc---paddings--padding-m);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container-left:where(.w-variant-38ad5934-64e5-dca6-50a9-6c06f0fcd8e0) {
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), black 25%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black));
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container-left:where(.w-variant-e4c1bd2d-f408-46ce-4100-aea58c03a84e) {
+    background-image: linear-gradient(180deg, var(--_vc---colours--transparent), var(--_vc---colours--black) 14%), linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), hsla(0, 0.00%, 5.10%, 0.50) 95%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-container-left.health-wellness-12 {
+    padding-right: var(--_vc---paddings--padding-m);
+    padding-left: var(--_vc---paddings--padding-m);
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.sticky-container-left.is--travel-blog {
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(180deg, hsla(0, 0.00%, 100.00%, 0.00), var(--_vc---colours--black) 69%);
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-container-left.is--travel-blog {
+    padding-bottom: 2em;
+  }
+}
+
+.sticky-left-wrapper {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+@media screen and (max-width: 991px) {
+  .sticky-left-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-left-wrapper {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sticky-left-wrapper:where(.w-variant-7d63da69-30bf-7079-1a23-483cd31d43cb) {
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sticky-left-wrapper.health-wellness-13 {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.div-block-88 {
+  filter: invert(100%);
+}
+
+@media screen and (max-width: 767px) {
+  .div-block-88:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+    display: none;
+  }
+}
+
+.image-13 {
+  display: none;
+  width: 250px;
+  filter: brightness(0%);
+}
+
+.image-13:where(.w-variant-4b535f97-e78a-3334-e591-44e2bc69fcf9) {
+  display: block;
+}
+
+.hero-background-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 90%;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-background-image:where(.w-variant-82d96280-67a1-7201-6394-3b11ee38cf7d) {
+    display: inline-block;
+  }
+}
